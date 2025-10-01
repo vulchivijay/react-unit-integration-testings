@@ -6,7 +6,7 @@ import App from './App'; // Assuming your main component is App.jsx
 describe('App', () => {
   test('renders the main heading', () => {
     render(<App />);
-    const headingElement = screen.getByText("Click on the Vite and React logos to learn more");
+    const headingElement = screen.getByText(/Vite \+ React/i);
     expect(headingElement).toBeInTheDocument();
   });
 });
