@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App'; // Assuming your main component is App.jsx
 
 describe("App Component", () => {
@@ -52,7 +52,6 @@ describe("App Component", () => {
     render(<App />);
     const inputElement = screen.getByPlaceholderText("Enter name");
     inputElement.setAttribute("value", "vijay");
-    console.log(inputElement.getAttribute("value") === "vijay");
     expect(inputElement).toBeInTheDocument();
   })
 });
