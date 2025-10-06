@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import ProductPage from './ProductPage';
+import Product from './Product.jsx';
 
 describe('Product component', () => {
   const mockProduct = {
@@ -9,7 +9,7 @@ describe('Product component', () => {
   };
 
   test('button and message update correctly after adding to cart', () => {
-    render(<ProductPage product={mockProduct} />);
+    render(<Product product={mockProduct} />);
 
     // Check initial state
     const addToCartButton = screen.getByRole('button', { name: 'Add to Cart' });

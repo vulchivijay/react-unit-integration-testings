@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import UserProfile from './UserProfile';
-import { AuthContext } from '../contexts/AuthContext'; // Assume you have this context
+import { AuthContext } from './../contexts/AuthContext'; // Assume you have this context
 
 // Mock the custom hook
 const mockUseFetchData = jest.fn();
 
-jest.mock('./../hooks/useFetchData', () => ({
+jest.mock('./../hooks/useFetchData.jsx', () => ({
   useFetchData: (url) => mockUseFetchData(url),
 }));
 

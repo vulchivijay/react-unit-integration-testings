@@ -26,7 +26,7 @@ describe('API fetching data component', () => {
     const end = performance.now();
     const fullLoadTime = end - start;
 
-    console.log(`FetchData full load time: ${fullLoadTime} milliseconds.`);
+    // console.log(`FetchData full load time: ${fullLoadTime} milliseconds.`);
 
     // Assert against a performance budget
     expect(fullLoadTime).toBeLessThan(200);

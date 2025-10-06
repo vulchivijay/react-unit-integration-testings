@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { useAuth } from '../contexts/AuthContext';
-import { useFetchData } from '../hooks/useFetchData';
+import { AuthContext } from './../contexts/AuthContext.jsx';
+import { useFetchData } from './../hooks/useFetchData.jsx';
 
 export default function UserProfile() {
-  const { user } = useContext(useAuth);
+  const { user } = useContext(AuthContext);
   const { data: profile, loading, error } = useFetchData(`/api/users/${user.id}/profile`);
 
   if (loading) return <div>Loading profile...</div>;

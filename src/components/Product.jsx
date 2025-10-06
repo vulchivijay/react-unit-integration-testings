@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AddToCartButton from './AddToCartButton';
 
-export default function ProductPage({ product }) {
+export default function Product({ product }) {
   const [isAdded, setIsAdded] = useState(false);
 
   const handleAddToCart = () => {

@@ -13,7 +13,7 @@ const onRenderCallback = (
 
 export default function MyProfile() {
   return (
-    <Profiler id="MyProfileComponent" onRender={onRenderCallback}>
+    <Profiler id="MyProfile" onRender={onRenderCallback}>
       <div>My Profile Content</div>
     </Profiler>
   );

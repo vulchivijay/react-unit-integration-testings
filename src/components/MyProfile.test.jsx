@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import MyProfile from './MyProfile';
+import MyProfile from './MyProfile.jsx';
 
 describe('My profile component', () => {
   test('MyProfile renders', () => {
